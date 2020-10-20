@@ -2,18 +2,22 @@ body{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
 }
 .img{
+	position: relative;
 	background: url("sky2.png") no-repeat center / cover;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 }
 .filt{
 	position: absolute;
-	
+
 	transition: 2s;
 	border-radius: 50%;
-	
+
 	filter: blur(20px);
 }
 .a1{
@@ -130,7 +134,7 @@ body{
         background-size: 0%;
         transition: 2s ease;
         transform: rotateX(360deg);
-        margin-left: 200px; 
+        margin-left: 200px;
         margin-top: 50px;
     }
     50%{
@@ -139,7 +143,7 @@ body{
         display: none;
         background-size: 10%;
         transform: rotateX(360deg);
-        margin-left: -200px; 
+        margin-left: -200px;
         margin-top: -50px;
     }
      100%{
@@ -147,7 +151,7 @@ body{
         background-size: 0%;
         transition: 2s ease;
         transform: rotateX(360deg);
-        margin-left: 200px; 
+        margin-left: 200px;
         margin-top: 50px;
     }
 }
@@ -158,7 +162,7 @@ body{
         transition: 2s ease;
     }
     50%{
-               background: linear-gradient(to left ,#fff, transparent);
+        background: linear-gradient(to left ,#fff, transparent);
         transition: 2s ease;
         display: none;
         background-size: 100%;
@@ -191,6 +195,6 @@ body{
         transition: 2s ease;
         transform: rotateX(720deg);
         filter: blur(20px);
-      
+
     }
 }
